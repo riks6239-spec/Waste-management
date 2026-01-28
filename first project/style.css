@@ -1,0 +1,86 @@
+:root { 
+    --primary: #1b4332; 
+    --secondary: #40916c; 
+    --bg: #f8f9fa; 
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: var(--bg); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.card { 
+    background: white; 
+    width: 100%; 
+    max-width: 500px; 
+    padding: 2rem; 
+    border-radius: 20px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+    text-align: center; 
+    position: relative; 
+}
+
+/* Language Switcher Styling */
+.lang-select { 
+    position: absolute; 
+    top: 15px; 
+    right: 20px; 
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 12px; 
+}
+
+#video-container, #preview { 
+    width: 100%; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    margin-bottom: 15px; 
+    display: none; 
+    border: 3px solid var(--secondary); 
+}
+
+video { width: 100%; display: block; }
+
+.btn-group { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    margin-bottom: 15px; 
+}
+
+button { 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+#actionBtn { 
+    width: 100%; 
+    font-size: 18px; 
+    height: 55px; 
+    background: #2d6a4f; 
+    margin-top: 10px; 
+}
+
+#actionBtn:disabled { background: #ccc; }
+
+.result-box { 
+    padding: 20px; 
+    border-radius: 15px; 
+    display: none; 
+    border: 3px solid var(--primary); 
+    background: #f0fff4; 
+    text-align: left; 
+}
